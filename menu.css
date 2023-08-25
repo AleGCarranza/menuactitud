@@ -86,6 +86,27 @@
     left:.525em;
   }
  
+.search-box{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30px;
+}
+
+.input-search{
+  width: 80%;
+  background-color: rgb(73, 73, 73);
+  color: #fffffF;
+}
+::placeholder{
+  color: #fffffF;
+}
+.button_search{
+  width: 18%;
+  background-color:rgba(133, 133, 133);
+  color: #fffffF;
+ padding: 0;
+}
 
   .menu__nav--category{
     line-height: 2rem;
