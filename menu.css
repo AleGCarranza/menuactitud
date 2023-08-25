@@ -1,3 +1,8 @@
+*{
+  text-decoration: none;
+  list-style: none;
+  font-size: 1rem;
+}
 .header{
   box-sizing: border-box;
   text-decoration: none;
@@ -10,86 +15,31 @@
   height: 5rem;
   width: 100vw;
   background-color: black;
+  padding-left: .625em;
 }
 .menu__nav-img{
   width: 20%;
   height: 100%;
 }
-.menu__nav--img{
-  position: absolute;
-  margin-top:0.625em;
-  margin-left: 1.25em;
-  width: auto;
-  height: 3.125em;
-}
-.menu__nav--nav_links{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  height: 100%;
-  color:#ffffff;
-  
-}
-.menu__nav--nav_links li{
-  display:inline-block;
-  line-height: 5em;
-  color:#ffffff;
-
-}
-.menu__nav--links--category, .menu__nav--links--category--social{
-  font-size:1rem;
-  color:#ffffff;
-  padding: .125em .188em;
-  border-radius: .188em;
-}
-
-.menu__nav--label{
-  font-size:1.25em;
-}
-.links__social{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width:10%;
-  height: 100%;
-}
-.menu__nav--links--social{
-  font-size:1.3rem;
-  color:#fff;
-  padding: .438em .813em;
-  border-radius: .188em;
-
-}
-
-.menu__nav--menu{
+#menu__nav--check{
+  display:none;
+  }
+  .menu__nav--menu{
   position: absolute;
   right: 15px;
-  display: none;
   height:1.563em;
   float: left;
   line-height: 5em;
   margin-top:1.25em ;
   cursor:pointer;
-}
 
-
-#menu__nav--check,.search-container,.menu-advertising{
-display:none;
-}
-
-@media(max-width:1052px){
-  .menu__nav{
-    padding-left: .625em;
   }
-  .menu__nav--links--category{
-  font-size: rem;
+  .menu__nav--nav_links{
+    display: none;
   }
-  }
-  @media(max-width: 768px){
-    .menu__nav--menu,.search-container,.menu-advertising{
+  .menu__nav--menu,.search-container,.menu-advertising{
     display:block;
-    /*margin-right: 10px;*/
+    margin-right: 10px;
   }
   .menu__nav--nav_links{
     position: fixed;
@@ -158,9 +108,9 @@ display:none;
   }
   
   .menu__nav--links--social{
-    padding: 0;
+    font-size:1.3rem;
+    color:#fff;
+    padding: .438em .813em;
     border-radius: .188em;
-    display: inline-block;
-  }
   }
   
