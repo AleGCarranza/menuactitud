@@ -35,9 +35,39 @@
   
 .menu__nav--icon{
     cursor:pointer;
-    font-size: 2rem;
-    color:white;
-    display: block;
+    width: 50px;
+    height: 30px;
+    position: relative;
+    
+  }
+  .menu__nav--icon #spn1, #spn3{
+    position: absolute;
+    content:"";
+    background-color: #fffffF;
+    width: 50px;
+    height: 5px;
+    border-radius: 5px;
+    transition: all 400ms ease;
+  }
+  #spn3{
+    top: 22px;
+  }
+
+  #menu__nav--check:checked ~ .menu__nav--icon #spn1{
+    transform: rotate(140deg);
+    top:10px;
+
+  }
+  
+  #menu__nav--check:checked ~ .menu__nav--icon #spn2{
+    opacity: 0;
+
+  }
+  
+  #menu__nav--check:checked ~ .menu__nav--icon #spn3{
+    transform: rotate(-140deg);
+    top:10px;
+
   }
 
   .menu__nav--categories{
@@ -74,16 +104,49 @@
     cursor:pointer;
   }
   
-  .menu__nav--categories > li:not(:first-child):not(:nth-child(2)):not(.category-paragraph)::before {
+  .menu__nav--categories > li:nth-child(n+3)::before  {
     position:absolute;
     left:.525em;
     content: "";
     width:.400em;
     height: 80%; 
-    background-color: aqua;
+   
+    
     
   }
 
+  .menu__nav--categories > li:nth-child(n+3)::before {
+    background-color: #91253C; 
+  }
+  .menu__nav--categories > li:nth-child(n+4)::before {
+    background-color: #565294; 
+  }
+  .menu__nav--categories > li:nth-child(n+5)::before {
+    background-color: #C73A7A; 
+  }
+  .menu__nav--categories > li:nth-child(n+6)::before {
+    background-color: #E3639E; 
+  }
+  .menu__nav--categories > li:nth-child(n+7)::before {
+    background-color: #5390D1; 
+  }
+  .menu__nav--categories > li:nth-child(n+8)::before {
+    background-color: #17BFA3; 
+  }
+  .menu__nav--categories > li:nth-child(n+9)::before {
+    background-color: #72B73F; 
+  }
+  .menu__nav--categories > li:nth-child(n+10)::before {
+    background-color: #EFAA0C; 
+  }
+  .menu__nav--categories > li:nth-child(n+11)::before {
+    background-color: #E57129; 
+  }
+  .menu__nav--categories > li:nth-child(n+12)::before {
+    background-color: #91253C; 
+  }
+  
+  
   
   
   
